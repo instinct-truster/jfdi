@@ -1,3 +1,7 @@
 body {
   border: solid 1px grey;
 }
+
+input {
+  margin: 5px;
+}

@@ -4,52 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
     <title>JFDI</title>
   </head>
   <body>
-    <section>
-      <header>
-        <h1>Conceive... Believe... Achieve!</h1>
-      </header>
-      <section class="main">
-        <label>Your goal achieving future begins here...<br /></label>
-        <input
-          type="text"
-          id="fresh"
-          size="60"
-          placeholder="Your future starts here..."
-          autofocus />
-        <!-- Below will be hidden until filled -->
-        <ul class="todo-list"></ul>
-      </section>
-      <!-- Below will also be hidden until filled -->
-      <footer class="footer">
-        <!-- Default will show "0 items left" -->
-        <span class="todo-count"><strong>0</strong> items remain</span>
-        <script>
-          function updateCount(count) {
-            document.querySelector(".todo-count strong").innerHTML = count;
-          }
-        </script>
-        <!-- Routing to goal stages -->
-        <ul class="filters">
-          <li>
-            <a class="selected" href="#/">All</a>
-          </li>
-          <li>
-            <a href="#/active">Active</a>
-          </li>
-          <li>
-            <a href="#/completed">Completed</a>
-          </li>
-        </ul>
-        <!-- Below remains hidden unless needed -->
-        <button class="clear-completed">Clear completed goals.</button>
-      </footer>
-    </section>
-    <footer class="info">
-      <p>Double-click to edit a todo</p>
-    </footer>
+    <header>
+      <h1>Conceive... Believe... Achieve!</h1>
+    </header>
+    <label>Your goal achieving future begins here...<br /></label>
+    <input
+      type="text"
+      id="fresh"
+      size="60"
+      placeholder="Your future starts here..."
+      autofocus />
+    <button id="submit-button">Add</button>
+    <div id="goal-list"></div>
   </body>
-  <script src="main.js" defer></script>
 </html>
