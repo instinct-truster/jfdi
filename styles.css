@@ -1,7 +1,50 @@
-body {
-  border: solid 1px grey;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-input {
-  margin: 5px;
+body {
+  background-color: orange;
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  color: rgb(174, 174, 174);
+}
+
+form input,
+form button,
+.select {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  border: 6px solid brown;
+  background: white;
+  border-radius: 2rem;
+}
+
+svg {
+  padding-right: 0.4rem;
+}
+
+form button {
+  color: goldenrod;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  margin-left: 0.5rem;
 }

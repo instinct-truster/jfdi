@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
     <title>JFDI</title>
@@ -11,14 +16,37 @@
     <header>
       <h1>Conceive... Believe... Achieve!</h1>
     </header>
-    <label>Your goal achieving future begins here...<br /></label>
-    <input
-      type="text"
-      id="fresh"
-      size="60"
-      placeholder="Your future starts here..."
-      autofocus />
-    <button id="submit-button">Add</button>
+
+    <form action="">
+      <input
+        class="goal-input"
+        type="text"
+        id="fresh"
+        size="50"
+        placeholder="Your future starts here..." />
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3rem"
+          height="auto"
+          viewBox="0 0 448 512">
+          <path
+            fill="currentColor"
+            d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zM208 80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-48v112c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16V192h-48c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h48V80z" />
+        </svg>
+      </button>
+      <div class="select">
+        <select name="goal-types" id="filter-goal-types">
+          <option value="minimal-effort">Minimal Effort</option>
+          <option value="significant-effort">Significant Effort</option>
+          <option value="long-term">Long Term</option>
+        </select>
+      </div>
+    </form>
+    <div class="goals-container">
+      <ul class="goal-list"></ul>
+    </div>
+
     <div id="goal-list"></div>
   </body>
 </html>
